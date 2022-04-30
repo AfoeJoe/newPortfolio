@@ -1,0 +1,40 @@
+.wrapper li::before {
+  content: '○';
+  padding-right: 0.5em;
+  color: rgb(97, 175, 240);
+}
+.wrapper {
+  width: 93.87755102040816%;
+  max-width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lists {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.button {
+  width: 70.68965517241379%;
+  margin: 1em 0 0;
+  padding: 0;
+  line-height: 3em;
+  display: block;
+  font-size: 1.125em;
+  font-weight: 400;
+  text-align: center;
+  color: #f4efef;
+  background: #f27f7a;
+  border: 0;
+  border-radius: 0.5em;
+  box-shadow: 0 0.125em 0 hsla(0, 0%, 0%, 0.05);
+  -webkit-transition-property: color, background, border-color, margin-top;
+  -moz-transition-property: color, background, border-color, margin-top;
+  -o-transition-property: color, background, border-color, margin-top;
+  transition-property: color, background, border-color, margin-top;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  right: 0;
+}

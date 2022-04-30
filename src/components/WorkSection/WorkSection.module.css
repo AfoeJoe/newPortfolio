@@ -1,0 +1,144 @@
+.gridWrapper {
+  margin: auto;
+  display: grid;
+  grid-template-columns: minmax(min-content, 2fr);
+  grid-template-rows: 500px 200px 200px;
+  max-width: 1200px;
+  column-gap: 15px;
+}
+.article {
+  position: relative;
+}
+.imageFrame {
+  width: auto;
+  max-width: 90%;
+  height: 85%;
+  margin: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 5%;
+  right: 0;
+}
+.article .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.article:nth-child(1) {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  height: 250px;
+}
+
+.article:nth-child(2) {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  height: 250px;
+  position: relative;
+  bottom: 100px;
+}
+.article:nth-child(3) {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  height: 250px;
+}
+
+@media (min-width: 500px) {
+  .gridWrapper {
+    grid-template-columns: minmax(min-content, 2fr) minmax(min-content, 2fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 1200px;
+    column-gap: 15px;
+  }
+
+  .article:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    height: 500px;
+  }
+
+  .article:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    height: 300px;
+    bottom: 0;
+  }
+  .article:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    height: 300px;
+  }
+}
+
+section .title {
+  width: 100%;
+  margin-left: 0;
+  padding: 6em 0 0 0;
+  border-bottom: 0;
+  box-shadow: none;
+  background: none;
+}
+
+.title {
+  margin: 0;
+  padding: 6em 0 3.0625em;
+  box-shadow: 0 0.375em #262c35;
+  position: relative;
+  background: #f06457;
+  background: -moz-linear-gradient(top, #f27254 0%, #f06457 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #f27254),
+    color-stop(100%, #f06457)
+  );
+  background: -webkit-linear-gradient(top, #f27254 0%, #f06457 100%);
+  background: -o-linear-gradient(top, #f27254 0%, #f06457 100%);
+  background: -ms-linear-gradient(top, #f27254 0%, #f06457 100%);
+  background: linear-gradient(to bottom, #f27254 0%, #f06457 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f27254',endColorstr='#f06457',GradientType=0 );
+}
+
+section:nth-child(even) .title h1 {
+  color: #d4cec2;
+}
+
+.title h1,
+.title h2,
+.title.intro span {
+  margin: 1em 1em 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.work article:first-child {
+  width: 100%;
+  margin: 5em 0 2em;
+}
+
+.workInfo {
+  width: 88.66666666666667%;
+  padding: 1em 5.66666666666667%;
+  position: relative;
+  background: #2b313d;
+  z-index: 8;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.workInfo h2 {
+  line-height: 1.5em;
+  color: #d4cec2;
+}
+
+.work {
+  padding-bottom: 30px;
+}
+.imageFrame:hover div {
+  transition-duration: 2s;
+  background: hs;
+}
