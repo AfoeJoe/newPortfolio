@@ -41,7 +41,8 @@ const ExpertiseSection = () => {
           className={styles.button}
           href={'../../assets/OkunolaJoshua.pdf'}
           download='OkunolaJoshuaCV.pdf'
-          target='_blank' /* onClick="ga('send', 'event', 'button', 'click', 'CV');" */
+          target='_blank'
+          rel='noopener noreferrer'
         >
           Download CV
         </a>

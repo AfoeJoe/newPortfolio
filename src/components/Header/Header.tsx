@@ -21,7 +21,7 @@ const Header = () => {
         <nav className={styles.nav}>
           <ul>
             <li>
-              <a href='#work..'>Work</a>
+              <a href='#work'>Work</a>
             </li>
             <li>
               <a href='#skills'>SKills</a>
